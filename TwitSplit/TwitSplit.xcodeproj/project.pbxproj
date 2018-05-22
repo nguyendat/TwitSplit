@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F487CA88F4C1F818E2265E6 /* Pods_TwitSplitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C5D3E9A51EB848FB833A712 /* Pods_TwitSplitTests.framework */; };
 		26E53E9D20B3CFE700022500 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E53E9C20B3CFE700022500 /* AppDelegate.swift */; };
 		26E53E9F20B3CFE700022500 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E53E9E20B3CFE700022500 /* ViewController.swift */; };
 		26E53EA220B3CFE700022500 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26E53EA020B3CFE700022500 /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		26E53EA720B3CFE900022500 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26E53EA520B3CFE900022500 /* LaunchScreen.storyboard */; };
 		26E53EB220B3CFE900022500 /* TwitSplitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E53EB120B3CFE900022500 /* TwitSplitTests.swift */; };
 		26E53EBD20B3CFE900022500 /* TwitSplitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E53EBC20B3CFE900022500 /* TwitSplitUITests.swift */; };
+		309CD75ABD6E17D65C379865 /* Pods_TwitSplitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E680B04F914C4D401939FB /* Pods_TwitSplitUITests.framework */; };
+		A8A4D7C4184C9147D3E9F98F /* Pods_TwitSplit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C5EE4D45E59242F8B1CE57 /* Pods_TwitSplit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23C5EE4D45E59242F8B1CE57 /* Pods_TwitSplit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitSplit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26E53E9920B3CFE700022500 /* TwitSplit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitSplit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26E53E9C20B3CFE700022500 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26E53E9E20B3CFE700022500 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,14 @@
 		26E53EB820B3CFE900022500 /* TwitSplitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitSplitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26E53EBC20B3CFE900022500 /* TwitSplitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitSplitUITests.swift; sourceTree = "<group>"; };
 		26E53EBE20B3CFE900022500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47E680B04F914C4D401939FB /* Pods_TwitSplitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitSplitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E55BC939CF4CCAE058E3B8E /* Pods-TwitSplitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitSplitUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitSplitUITests/Pods-TwitSplitUITests.release.xcconfig"; sourceTree = "<group>"; };
+		77386F0827C68913D4872EA9 /* Pods-TwitSplitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitSplitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwitSplitUITests/Pods-TwitSplitUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		843C09AB298FB513401707CB /* Pods-TwitSplit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitSplit.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitSplit/Pods-TwitSplit.release.xcconfig"; sourceTree = "<group>"; };
+		9C5D3E9A51EB848FB833A712 /* Pods_TwitSplitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitSplitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B72AA76D5E7F5200C57484F9 /* Pods-TwitSplitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitSplitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwitSplitTests/Pods-TwitSplitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB17FA1075C40D40502C8A60 /* Pods-TwitSplitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitSplitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitSplitTests/Pods-TwitSplitTests.release.xcconfig"; sourceTree = "<group>"; };
+		DD0C2B94C4118FA65CE8AB50 /* Pods-TwitSplit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitSplit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwitSplit/Pods-TwitSplit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8A4D7C4184C9147D3E9F98F /* Pods_TwitSplit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F487CA88F4C1F818E2265E6 /* Pods_TwitSplitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				309CD75ABD6E17D65C379865 /* Pods_TwitSplitUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				26E53EB020B3CFE900022500 /* TwitSplitTests */,
 				26E53EBB20B3CFE900022500 /* TwitSplitUITests */,
 				26E53E9A20B3CFE700022500 /* Products */,
+				79798212FDFE6BB75C970379 /* Pods */,
+				6D17EA47659F1AC7245BD574 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +142,29 @@
 			path = TwitSplitUITests;
 			sourceTree = "<group>";
 		};
+		6D17EA47659F1AC7245BD574 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23C5EE4D45E59242F8B1CE57 /* Pods_TwitSplit.framework */,
+				9C5D3E9A51EB848FB833A712 /* Pods_TwitSplitTests.framework */,
+				47E680B04F914C4D401939FB /* Pods_TwitSplitUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79798212FDFE6BB75C970379 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD0C2B94C4118FA65CE8AB50 /* Pods-TwitSplit.debug.xcconfig */,
+				843C09AB298FB513401707CB /* Pods-TwitSplit.release.xcconfig */,
+				B72AA76D5E7F5200C57484F9 /* Pods-TwitSplitTests.debug.xcconfig */,
+				CB17FA1075C40D40502C8A60 /* Pods-TwitSplitTests.release.xcconfig */,
+				77386F0827C68913D4872EA9 /* Pods-TwitSplitUITests.debug.xcconfig */,
+				6E55BC939CF4CCAE058E3B8E /* Pods-TwitSplitUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26E53EC120B3CFE900022500 /* Build configuration list for PBXNativeTarget "TwitSplit" */;
 			buildPhases = (
+				32903C09D2E863EE270FA760 /* [CP] Check Pods Manifest.lock */,
 				26E53E9520B3CFE700022500 /* Sources */,
 				26E53E9620B3CFE700022500 /* Frameworks */,
 				26E53E9720B3CFE700022500 /* Resources */,
+				F79D1B0B4855FC7DFD767734 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +191,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26E53EC420B3CFE900022500 /* Build configuration list for PBXNativeTarget "TwitSplitTests" */;
 			buildPhases = (
+				BB6CA48209CC9C48DBD600D4 /* [CP] Check Pods Manifest.lock */,
 				26E53EA920B3CFE900022500 /* Sources */,
 				26E53EAA20B3CFE900022500 /* Frameworks */,
 				26E53EAB20B3CFE900022500 /* Resources */,
@@ -167,6 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26E53EC720B3CFE900022500 /* Build configuration list for PBXNativeTarget "TwitSplitUITests" */;
 			buildPhases = (
+				7DEEAC7C92465283D66A4980 /* [CP] Check Pods Manifest.lock */,
 				26E53EB420B3CFE900022500 /* Sources */,
 				26E53EB520B3CFE900022500 /* Frameworks */,
 				26E53EB620B3CFE900022500 /* Resources */,
@@ -250,6 +294,81 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32903C09D2E863EE270FA760 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TwitSplit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DEEAC7C92465283D66A4980 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TwitSplitUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB6CA48209CC9C48DBD600D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TwitSplitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F79D1B0B4855FC7DFD767734 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TwitSplit/Pods-TwitSplit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwitSplit/Pods-TwitSplit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		26E53E9520B3CFE700022500 /* Sources */ = {
@@ -428,14 +547,12 @@
 		};
 		26E53EC220B3CFE900022500 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD0C2B94C4118FA65CE8AB50 /* Pods-TwitSplit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TwitSplit/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cuongnotes.TwitSplit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -445,14 +562,12 @@
 		};
 		26E53EC320B3CFE900022500 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 843C09AB298FB513401707CB /* Pods-TwitSplit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TwitSplit/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cuongnotes.TwitSplit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -462,16 +577,13 @@
 		};
 		26E53EC520B3CFE900022500 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B72AA76D5E7F5200C57484F9 /* Pods-TwitSplitTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TwitSplitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cuongnotes.TwitSplitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -482,16 +594,13 @@
 		};
 		26E53EC620B3CFE900022500 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB17FA1075C40D40502C8A60 /* Pods-TwitSplitTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TwitSplitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cuongnotes.TwitSplitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -502,15 +611,12 @@
 		};
 		26E53EC820B3CFE900022500 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77386F0827C68913D4872EA9 /* Pods-TwitSplitUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TwitSplitUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cuongnotes.TwitSplitUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -521,15 +627,12 @@
 		};
 		26E53EC920B3CFE900022500 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E55BC939CF4CCAE058E3B8E /* Pods-TwitSplitUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TwitSplitUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cuongnotes.TwitSplitUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
