@@ -15,6 +15,9 @@
 		26E53EA720B3CFE900022500 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26E53EA520B3CFE900022500 /* LaunchScreen.storyboard */; };
 		26E53EB220B3CFE900022500 /* TwitSplitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E53EB120B3CFE900022500 /* TwitSplitTests.swift */; };
 		26E53EBD20B3CFE900022500 /* TwitSplitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E53EBC20B3CFE900022500 /* TwitSplitUITests.swift */; };
+		26E53ED320B41D5100022500 /* TweetSplitAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E53ED220B41D5100022500 /* TweetSplitAlgorithm.swift */; };
+		26E53ED420B41D5100022500 /* TweetSplitAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E53ED220B41D5100022500 /* TweetSplitAlgorithm.swift */; };
+		26E53ED520B41D5100022500 /* TweetSplitAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E53ED220B41D5100022500 /* TweetSplitAlgorithm.swift */; };
 		309CD75ABD6E17D65C379865 /* Pods_TwitSplitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E680B04F914C4D401939FB /* Pods_TwitSplitUITests.framework */; };
 		A8A4D7C4184C9147D3E9F98F /* Pods_TwitSplit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C5EE4D45E59242F8B1CE57 /* Pods_TwitSplit.framework */; };
 /* End PBXBuildFile section */
@@ -51,6 +54,7 @@
 		26E53EB820B3CFE900022500 /* TwitSplitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitSplitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26E53EBC20B3CFE900022500 /* TwitSplitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitSplitUITests.swift; sourceTree = "<group>"; };
 		26E53EBE20B3CFE900022500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26E53ED220B41D5100022500 /* TweetSplitAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetSplitAlgorithm.swift; sourceTree = "<group>"; };
 		47E680B04F914C4D401939FB /* Pods_TwitSplitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitSplitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E55BC939CF4CCAE058E3B8E /* Pods-TwitSplitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitSplitUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitSplitUITests/Pods-TwitSplitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		77386F0827C68913D4872EA9 /* Pods-TwitSplitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitSplitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwitSplitUITests/Pods-TwitSplitUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +124,7 @@
 				26E53EA320B3CFE900022500 /* Assets.xcassets */,
 				26E53EA520B3CFE900022500 /* LaunchScreen.storyboard */,
 				26E53EA820B3CFE900022500 /* Info.plist */,
+				26E53ED220B41D5100022500 /* TweetSplitAlgorithm.swift */,
 			);
 			path = TwitSplit;
 			sourceTree = "<group>";
@@ -377,6 +382,7 @@
 			files = (
 				26E53E9F20B3CFE700022500 /* ViewController.swift in Sources */,
 				26E53E9D20B3CFE700022500 /* AppDelegate.swift in Sources */,
+				26E53ED320B41D5100022500 /* TweetSplitAlgorithm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +390,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26E53ED420B41D5100022500 /* TweetSplitAlgorithm.swift in Sources */,
 				26E53EB220B3CFE900022500 /* TwitSplitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,6 +399,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26E53ED520B41D5100022500 /* TweetSplitAlgorithm.swift in Sources */,
 				26E53EBD20B3CFE900022500 /* TwitSplitUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -552,7 +560,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TwitSplit/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cuongnotes.TwitSplit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -567,7 +578,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TwitSplit/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cuongnotes.TwitSplit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -583,7 +597,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TwitSplitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cuongnotes.TwitSplitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -600,7 +618,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TwitSplitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cuongnotes.TwitSplitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -616,7 +638,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TwitSplitUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cuongnotes.TwitSplitUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -632,7 +658,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TwitSplitUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cuongnotes.TwitSplitUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
