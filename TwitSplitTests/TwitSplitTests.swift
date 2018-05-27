@@ -79,39 +79,27 @@ class TwitSplitTests: XCTestCase {
         XCTAssertEqual(output, expectResult)
     }
     
-    func testTweetLessThan10Chunks() {
-        
+    func testTweetWithMultiSpaceAndCharacters() {
+        let inputString = "I can't      believeTweeternows      upportschunki    ngmymessages,so  I       don't have to do it                   myself"
+        let expectResult = ["1/2 I can\'t believeTweeternows upportschunki",
+                            "2/2 ngmymessages,so I don\'t have to do it myself"]
+        let output = TweetSplitAlgorithm.splitMessage(inputString)
+        XCTAssertEqual(output, expectResult)
     }
     
     func testTweetMoreThan10Chunks() {
-        let inputString = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."
-        let expectResult = ["1/27 Lorem ipsum dolor sit er elit lamet,",
-                            "2/27 consectetaur cillium adipisicing pecu, sed",
-                            "3/27 do eiusmod tempor incididunt ut labore et",
-                            "4/27 dolore magna aliqua. Ut enim ad minim",
-                            "5/27 veniam, quis nostrud exercitation ullamco",
-                            "6/27 laboris nisi ut aliquip ex ea commodo",
-                            "7/27 consequat. Duis aute irure dolor in",
-                            "8/27 reprehenderit in voluptate velit esse",
-                            "9/27 cillum dolore eu fugiat nulla pariatur.",
-                            "10/27 Excepteur sint occaecat cupidatat non",
-                            "11/27 proident, sunt in culpa qui officia",
-                            "12/27 deserunt mollit anim id est laborum. Nam",
-                            "13/27 liber te conscient to factor tum poen",
-                            "14/27 legum odioque civiuda. Lorem ipsum dolor",
-                            "15/27 sit er elit lamet, consectetaur cillium",
-                            "16/27 adipisicing pecu, sed do eiusmod tempor",
-                            "17/27 incididunt ut labore et dolore magna",
-                            "18/27 aliqua. Ut enim ad minim veniam, quis",
-                            "19/27 nostrud exercitation ullamco laboris nisi",
-                            "20/27 ut aliquip ex ea commodo consequat. Duis",
-                            "21/27 aute irure dolor in reprehenderit in",
-                            "22/27 voluptate velit esse cillum dolore eu",
-                            "23/27 fugiat nulla pariatur. Excepteur sint",
-                            "24/27 occaecat cupidatat non proident, sunt in",
-                            "25/27 culpa qui officia deserunt mollit anim id",
-                            "26/27 est laborum. Nam liber te conscient to",
-                            "27/27 factor tum poen legum odioque civiuda."]
+        let inputString = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        let expectResult = ["1/11 Lorem ipsum dolor sit er elit lamet,",
+                            "2/11 consectetaur cillium adipisicing pecu, sed do",
+                            "3/11 eiusmod tempor incididunt ut labore et dolore",
+                            "4/11 magna aliqua. Ut enim ad minim veniam, quis",
+                            "5/11 nostrud exercitation ullamco laboris nisi ut",
+                            "6/11 aliquip ex ea commodo consequat. Duis aute",
+                            "7/11 irure dolor in reprehenderit in voluptate",
+                            "8/11 velit esse cillum dolore eu fugiat nulla",
+                            "9/11 pariatur. Excepteur sint occaecat cupidatat",
+                            "10/11 non proident, sunt in culpa qui officia",
+                            "11/11 deserunt mollit anim id est laborum."]
         let output = TweetSplitAlgorithm.splitMessage(inputString)
         XCTAssertEqual(output, expectResult)
     }
@@ -147,3 +135,4 @@ class TwitSplitTests: XCTestCase {
         XCTAssertEqual(output, expectResult)
     }
 }
+

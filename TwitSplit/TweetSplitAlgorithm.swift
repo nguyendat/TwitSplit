@@ -8,67 +8,80 @@
 
 import Foundation
 
+struct Result {
+    let subTweets: [String]
+    let success: Bool
+}
+
 class TweetSplitAlgorithm {
-    static func splitMessage(_ msg: String) -> [String] {
+    static func splitMessage(_ msg: String, maxTweetLength length: Int = 50) -> [String] {
         
-       let tweetString = msg.trimmingCharacters(in: .whitespaces)
-        
+       let tweetString = msg.standardizedWhitespace
+        //Check string empty
         if tweetString.count == 0 {
-            print("Xâu rỗng, cút")
             return []
         }
         let parts = tweetString.components(separatedBy:" ")
-        //
+        //Check string more than 50 chracters
         for item in parts {
             if item.count > 50 {
-                print("Có chữ dài hơn 50 kí tự")
                 return []
             }
         }
-        //
-        var maxLength = 50 - 4
+        
+        var maxNumberSubTweet = 1
+        var count = 0
         while true {
-            var result = combineMessages(parts, withMaximumLength: maxLength)
-            if result.1 {
-                return result.0
+            let result = combineMessages(parts, withMaxNumberSubTweet: maxNumberSubTweet, AndMaximumTweetLength: length)
+            if result.success {
+                return result.subTweets
             } else {
-                maxLength = maxLength - 1
+                count = count + 1
+                maxNumberSubTweet = Int(powf(10.0, Float(count))) - 1;
             }
         }
     }
     
-    static func combineMessages(_ msgs:[String], withMaximumLength length: Int) -> ([String], Bool){
+    static func combineMessages(_ msgs:[String], withMaxNumberSubTweet maxNumberSubTweet: Int, AndMaximumTweetLength maxTweetLength: Int) -> Result {
         var sentence: String = msgs.first!
         var results: [String] = []
         var numberSubTweet = 1
-        var maximumSubTweetLength = 0
+        var maxSubTweetLength = maxTweetLength - lengthOfIndicator(numberSubTweet, andMaxNumberOfSubTweet: maxNumberSubTweet)
         for index in 1..<(msgs.count) {
             let msg  = msgs[index]
-            if (sentence.count + msg.count + 1) <= length {
+            if (sentence.count + msg.count + 1) <= maxSubTweetLength {
                 sentence = "\(sentence) \(msg)"
             } else {
-                numberSubTweet = numberSubTweet + 1
-                maximumSubTweetLength = maximumSubTweetLength > sentence.count ? maximumSubTweetLength : sentence.count
                 results.append(sentence)
+                numberSubTweet = numberSubTweet + 1
+                maxSubTweetLength = maxTweetLength - lengthOfIndicator(numberSubTweet, andMaxNumberOfSubTweet: maxNumberSubTweet)
                 sentence = msg
             }
-        }
-        if sentence != msgs.last! {
-            results.append(sentence)
-        }
-        if numberSubTweet == 1 {
-            // Bằng 1 thì không cần thêm indicator
-            return (results, true)
-        }
-        let maxIndicatorLength = (numberSubTweet / 10 + 1) * 2 + 2
-        let indicatorLength = 50 - length
-        if maxIndicatorLength > indicatorLength {
-            return ([], false)
-        } else {
-            for (i, sentence) in results.enumerated() {
-                results[i] = "\(i+1)/\(numberSubTweet) \(sentence)"
+            if numberSubTweet > maxNumberSubTweet {
+                return Result(subTweets: [], success: false)
             }
-            return (results, true)
         }
+        results.append(sentence)
+        if numberSubTweet == 1 {
+            // if number of sub tweet equal 1. we dont need add indicator.s
+            return Result(subTweets:results, success: true)
+        }
+        // add indicator when number of sub tweet great than 1.
+        for (i, sentence) in results.enumerated() {
+            results[i] = "\(i+1)/\(numberSubTweet) \(sentence)"
+        }
+        return Result(subTweets:results, success: true)
+    }
+    
+    //Caculate length of indicator 1/10 => Return 5 ( 1 for space).
+    static func lengthOfIndicator(_ indexOfPartition: Int, andMaxNumberOfSubTweet number: Int) -> Int {
+        return "\(indexOfPartition)/\(number) ".count
+    }
+}
+
+extension String {
+    var standardizedWhitespace: String {
+        let components = self.components(separatedBy: .whitespacesAndNewlines)
+        return components.filter { !$0.isEmpty }.joined(separator: " ")
     }
 }
