@@ -1,4 +1,8 @@
 # TwitSplit
+![License](https://img.shields.io/cocoapods/l/ResolutionChecker.svg?style=flat)
+![](https://img.shields.io/badge/Supported-iOS11.3-4BC51D.svg?style=flat)
+![](https://img.shields.io/badge/Swift4-compatible-4BC51D.svg?style=flat)
+
 TwitSplit allow users to post short message limited to 50 characters. 
 
 ## Feature
@@ -111,3 +115,6 @@ In each range,
     }
     return Result(subTweets:results, success: true)
     ```
+## License
+
+TwitSplit is released under the MIT license. See LICENSE for details.
