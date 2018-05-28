@@ -6,7 +6,7 @@ TwitSplit allow users to post short message limited to 50 characters.
 
 ## Requirements
 
-- iOS 9.0+
+- iOS 11.3
 - Xcode 9
 - Swift 4
 
