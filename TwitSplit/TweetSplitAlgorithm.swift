@@ -21,6 +21,11 @@ class TweetSplitAlgorithm {
         if tweetString.count == 0 {
             return []
         }
+        
+        if tweetString.count <= length {
+            return([tweetString])
+        }
+        
         let parts = tweetString.components(separatedBy:" ")
         //Check string more than 50 chracters
         for item in parts {
@@ -62,10 +67,7 @@ class TweetSplitAlgorithm {
             }
         }
         results.append(sentence)
-        if numberSubTweet == 1 {
-            // if number of sub tweet equal 1. we dont need add indicator.s
-            return Result(subTweets:results, success: true)
-        }
+        
         // add indicator when number of sub tweet great than 1.
         for (i, sentence) in results.enumerated() {
             results[i] = "\(i+1)/\(numberSubTweet) \(sentence)"
